@@ -18,9 +18,11 @@ gem 'mysql2', '~> 0.3.18'
 
 gem 'activeadmin', '~> 1.0.0.pre1'
 gem 'inherited_resources', git: 'https://github.com/activeadmin/inherited_resources'
+gem 'activemodel-serializers-xml', github: 'rails/activemodel-serializers-xml'
+gem 'jquery-ui-rails', '~> 4.2.1'
 gem 'devise'
 gem 'cancan' # or cancancan
-gem 'draper'
+gem 'draper', '3.0.0.pre1'
 gem 'pundit'
 
 gem 'font-awesome-rails'
