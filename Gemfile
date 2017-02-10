@@ -1,3 +1,5 @@
+ruby '2.3.3'
+
 source 'https://rubygems.org'
 
 git_source(:github) do |repo_name|
@@ -5,11 +7,33 @@ git_source(:github) do |repo_name|
   "https://github.com/#{repo_name}.git"
 end
 
+gem 'bootstrap-sass', '~> 3.3.4'
+gem 'bootstrap-select-rails'
+gem 'c80_md', '0.1.0.13'#, :github => 'c80_md/c80_md', :branch => 'master'
+gem 'execjs'
+gem 'therubyracer'
+gem 'local_time'
+gem 'ckeditor'
+gem 'mysql2', '~> 0.3.18'
+
+gem 'activeadmin', '~> 1.0.0.pre1'
+gem 'inherited_resources', git: 'https://github.com/activeadmin/inherited_resources'
+gem 'devise'
+gem 'cancan' # or cancancan
+gem 'draper'
+gem 'pundit'
+
+gem 'font-awesome-rails'
+gem 'friendly_id'
+gem 'babosa'
+
+gem 'mini_magick'
+gem 'carrierwave'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.0.1'
 # Use sqlite3 as the database for Active Record
-gem 'sqlite3'
+# gem 'sqlite3'
 # Use Puma as the app server
 gem 'puma', '~> 3.0'
 # Use SCSS for stylesheets
