@@ -18,6 +18,7 @@ gem 'mysql2', '~> 0.3.18'
 
 gem 'activeadmin', '~> 1.0.0.pre1'
 gem 'inherited_resources', git: 'https://github.com/activeadmin/inherited_resources'
+gem 'activemodel-serializers-xml', github: 'rails/activemodel-serializers-xml'
 gem 'devise'
 gem 'cancan' # or cancancan
 gem 'draper'
