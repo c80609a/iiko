@@ -1,12 +1,12 @@
-class SiteController < ApplicationController
-  # before_action :construct
+class AktSpisaniaController < ApplicationController
 
   # Вью не видело модуль Forms.
   # include Front::AktSpisania::Forms # fails
   # helper Forms # fails
   helper Front::AktSpisania::Forms # works!
 
-  def index
+  # шеф-повар, базовая форма
+  def idle_chief
 
   end
 
