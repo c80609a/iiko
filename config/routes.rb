@@ -11,6 +11,9 @@ Rails.application.routes.draw do
   resources :akt_spisania do
     collection do
       get 'idle_chief'
+      get 'make_chief'
+      get 'view_chief'
+      get 'delete_chief'
     end
   end
 

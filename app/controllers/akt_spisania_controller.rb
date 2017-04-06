@@ -10,4 +10,19 @@ class AktSpisaniaController < ApplicationController
 
   end
 
+  # шеф-повар списывает ТМЦ
+  def make_chief
+
+  end
+
+  #
+  def view_chief
+
+  end
+
+  #
+  def delete_chief
+
+  end
+
 end

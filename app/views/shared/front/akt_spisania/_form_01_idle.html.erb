@@ -1,9 +1,9 @@
 <div class="forms_container">
     <div class="middle">
       <div class="form_01_idle">
-        <button type="button" class="btn btn-primary btn-block btn-lg">Просмотреть</button>
-        <button type="button" class="btn btn-primary btn-block btn-lg">Списать</button>
-        <button type="button" class="btn btn-primary btn-block btn-lg">Удалить</button>
+        <%= link_to 'Просмотреть', view_chief_akt_spisania_path, :class => 'btn btn-primary btn-block btn-lg' %>
+        <%= link_to 'Списать', make_chief_akt_spisania_path, :class => 'btn btn-primary btn-block btn-lg' %>
+        <%= link_to 'Удалить', delete_chief_akt_spisania_path, :class => 'btn btn-primary btn-block btn-lg' %>
       </div>
     </div>
 </div>
