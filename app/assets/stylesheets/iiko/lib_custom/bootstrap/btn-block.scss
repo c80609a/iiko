@@ -1,0 +1,30 @@
+/* большие кнопки, уложенные стопкой, создающие вертикальные меню */
+
+.btn-block {
+  margin-bottom: 8px;
+}
+
+@media (max-width: 767px) { /*Extra small devices Phones (<768px)*/
+  .btn-block {
+    font-size: 30px;
+    line-height: 2.8333333;
+  }
+}
+
+@media (min-width: 768px) { /*Small devices Tablets (≥768px)*/
+  .btn-block {
+    font-size: 30px;
+    line-height: 2.8333333;
+  }
+}
+
+@media (min-width: 992px) { /*Medium devices Desktops (≥992px)*/
+  .btn-block {
+    font-size: 25px;
+    line-height: 2.3333333;
+  }
+}
+
+@media (min-width: 1200px) { /*Large devices Desktops (≥1200px)*/
+
+}

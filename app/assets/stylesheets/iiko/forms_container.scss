@@ -1,0 +1,26 @@
+/* основная задача этого дива - выравнивавать > div по вертикали по центру */
+div.forms_container {
+  display: table;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  /*background-color: #2E2F30;*/ /*debug*/
+
+  div.middle {
+    display: table-cell;
+    vertical-align: middle;
+
+    > div { /* собственно, div формы */
+      margin-left: auto;
+      margin-right: auto;
+      width: 80%;
+      max-width: 1000px;
+      padding: 15px;
+
+      h1 {
+        margin-bottom: 50px;
+        font-weight: bold;
+      }
+    }
+  }
+}
