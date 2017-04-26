@@ -13,7 +13,14 @@ div.forms_container {
     > div { /* собственно, div формы */
       margin-left: auto;
       margin-right: auto;
-      width: 80%; /*whatever width you want*/;
+      width: 80%;
+      max-width: 1000px;
+      padding: 15px;
+
+      h1 {
+        margin-bottom: 50px;
+        font-weight: bold;
+      }
     }
   }
 }
