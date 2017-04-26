@@ -30,6 +30,38 @@ module Front
                }
       end
 
+      # Таблица, которую видит Шеф-повар на кухне, просматривая то, что списал он
+      def render_view_chief
+
+        akt_props = {
+            id: '2001234',
+            status: 'Неподтверждён',
+            owner: {},
+            place: 'Холодный цех',
+            datetime: '23 апреля 2017 г',
+            view_items_array: [
+                { item: ['Суп "Борщ"', 12],
+                  count: 12,
+                  timestamp: '09:20'
+                },
+                { item: ['Салат "Сельдь под шубой"', 12],
+                  count: 1,
+                  timestamp: '10:05'
+                },
+                { item: ['Макароны по-флотски', 12],
+                  count: 2,
+                  timestamp: '12:15'
+                },
+            ]
+        }
+
+        render :partial => 'shared/front/akt_spisania/form_03_view',
+               :locals => {
+                   akt_props: akt_props
+               }
+
+      end
+
     end
   end
 end

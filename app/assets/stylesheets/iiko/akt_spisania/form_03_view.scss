@@ -1,0 +1,121 @@
+div.form_03_view {
+
+  /*всё укладываем строками*/
+  > div {
+    //noinspection SassScssResolvedByNameOnly
+    @include clearfix;
+  }
+
+  .name {
+    font-weight: bold;
+  }
+
+  .place {
+    font-style: italic;
+    font-family: serif;
+  }
+
+  .datetime {
+    color: #730E15;
+  }
+
+  /*правую шапки выравниваем по правому краю*/
+  .act_id {
+    text-align: right;
+  }
+  .badge {
+    float: right;
+  }
+
+  .table {
+    font-size: 25px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+
+    thead th {
+      color: #414547;
+      background-color: #cdcecf;
+    }
+
+    .col-actions {
+      width: 250px;
+    }
+
+    td, th {
+      vertical-align: middle;
+    }
+
+    td {
+      padding: 20px 10px;
+    }
+  }
+
+}
+
+@media (max-width: 767px) { /*Extra small devices Phones (<768px)*/
+  /* Iphone6 Plus Landscape */
+
+  div.form_03_view {
+
+    /*делаем заголовки больше (по сравнению с portrait) */
+    h4 {
+      font-size: 25px;
+    }
+
+    /*текст в таблице делаем меньше*/
+    .table {
+      font-size: 20px;
+      margin-top: 50px;
+    }
+
+  }
+}
+
+@media (max-width: 415px) { /*Extra small devices Phones (<414px)*/
+  /* Iphone6 Plus Portrait */
+
+  div.form_03_view {
+
+    /*делаем заголовки меньше (по сравнению с landscape)*/
+    h4 {
+      font-size: 17px;
+    }
+
+    /*текст в таблице делаем меньше (по сравнению с landscape)*/
+    .table {
+      font-size: 18px;
+    }
+
+  }
+}
+
+@media (min-width: 768px) { /*Small devices Tablets (≥768px)*/
+  div.form_03_view {
+
+    /*делаем заголовки больше  */
+    h4 {
+      font-size: 27px;
+    }
+
+    .badge {
+      float: right;
+      /*статус документа делаем побольше*/
+      padding: 9px 19px;
+      font-size: 15px;
+    }
+
+    /*текст в таблице делаем меньше*/
+    .table {
+      font-size: 20px;
+      margin-top: 50px;
+    }
+
+  }
+}
+
+@media (min-width: 992px) { /*Medium devices Desktops (≥992px)*/
+}
+
+@media (min-width: 1200px) { /*Large devices Desktops (≥1200px)*/
+
+}

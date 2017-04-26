@@ -10,7 +10,8 @@
             <%= text_field_tag :count, '', :type => 'number', :class => 'form-control', :placeholder => 'Кол-во' %>
           </div>
           <%= link_to 'Отмена', idle_chief_akt_spisania_path, :class => 'btn btn-default' %>
-          <%= submit_tag 'Списать', :class => 'btn btn-warning float-right' %>
+          <%# submit_tag 'Списать', :class => 'btn btn-warning float-right' %>
+          <%= link_to 'Списать', view_chief_akt_spisania_path, :class => 'btn btn-warning float-right' %>
       <% end %>
     </div>
   </div>

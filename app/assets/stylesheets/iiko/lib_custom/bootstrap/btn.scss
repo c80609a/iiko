@@ -1,8 +1,26 @@
 .btn {
-  font-size: 30px;
+  font-size: 25px;
   height: 80px;
   padding-left: 30px;
   padding-right: 30px;
   border-radius: 10px;
   line-height: 65px;
+}
+
+@media (max-width: 767px) { /*Extra small devices Phones (<768px)*/ /* Iphone6 Plus Landscape */
+  .btn {
+    font-size: 23px;
+    height: 70px;
+    padding-top: 3px;
+    line-height: 63px;
+  }
+}
+
+@media (max-width: 415px) { /*Extra small devices Phones (<414px)*/ /* Iphone6 Plus Portrait */
+  .btn {
+    font-size: 23px;
+    height: 70px;
+    padding-top: 3px;
+    line-height: 63px;
+  }
 }
