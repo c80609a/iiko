@@ -1,0 +1,46 @@
+/* основная задача этого дива - выравнивавать > div по вертикали по центру */
+div.forms_container {
+  display: table;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  /*background-color: #2E2F30;*/ /*debug*/
+
+  /*почти обшие стили для div.middle, div.top*/
+  div.middle, div.top {
+    display: table-cell;
+    vertical-align: middle;
+
+    > div { /* собственно, div формы */
+      margin-left: auto;
+      margin-right: auto;
+      width: 100%;
+      padding: 15px;
+      max-width: 1000px;
+
+      h1 {
+        margin-bottom: 50px;
+        font-weight: bold;
+      }
+    }
+  }
+
+  /*но div.top выравниваем по верхнему краю*/
+  div.top { vertical-align: top; }
+
+}
+
+
+@media (max-width: 767px) { /*Extra small devices Phones (<768px)*/ /* Iphone6 Plus Landscape */
+  div.forms_container div.middle > div,
+  div.forms_container div.top > div {
+
+
+
+  }
+}
+
+@media (max-width: 415px) { /*Extra small devices Phones (<414px)*/ /* Iphone6 Plus Portrait */
+
+
+}

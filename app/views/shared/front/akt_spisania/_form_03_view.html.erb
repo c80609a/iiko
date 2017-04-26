@@ -1,0 +1,51 @@
+<div class="forms_container">
+  <div class="top">
+    <div class="form_03_view">
+
+      <div id="head">
+        <div class="float-left">
+          <h4 class="name">Николаев И.</h4>
+          <h4 class="place">Холодный цех</h4>
+        </div>
+
+        <div class="float-right">
+          <h4 class="datetime text-right">23 февраля 2017 г</h4>
+          <h4 class="act_id">Акт № <span class="text-blue text-bold text-blue-dashed">1234440</span></h4>
+          <span class="badge badge-default">Неподтверждён</span>
+        </div>
+      </div>
+
+      <div>
+        <table class="table table-striped">
+          <thead>
+            <tr>
+              <th>Название</th>
+              <th>Кол-во</th>
+              <th>Добавлен</th>
+              <th>Действия</th>
+            </tr>
+          </thead>
+          <tbody>
+            <% akt_props[:view_items_array].each do |el| %>
+              <tr>
+                <td><%= el[:item][0] %></td>
+                <td><%= el[:count] %></td>
+                <td><%= el[:timestamp] %></td>
+                <td>
+                  <%= link_to 'Удалить', '#' %> |
+                  <%= link_to 'Изменить', '#' %>
+                </td>
+              </tr>
+            <% end %>
+          </tbody>
+        </table>
+      </div>
+
+      <div>
+        <%= link_to 'Добавить', make_chief_akt_spisania_path, :class => 'btn btn-warning float-right' %>
+        <%= link_to 'На главную', idle_chief_akt_spisania_path, :class => 'btn btn-default' %>
+      </div>
+
+    </div>
+  </div>
+</div>

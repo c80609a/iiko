@@ -1,0 +1,47 @@
+/*саму кнопку сделаем больше*/
+.btn.selectpicker.btn-default {
+  font-size: 25px;
+  line-height: 2.3333333;
+  height: 80px;
+  padding-left: 31px;
+  border-radius: 10px;
+}
+
+/*стрелочку справа делаем больше*/
+.bootstrap-select.btn-group .btn .caret {
+  right: 20px;
+  border-top: 9px dashed;
+  border-right: 9px solid transparent;
+  border-left: 9px solid transparent;
+}
+
+/*текст в dropdown сделаем больше*/
+.dropdown-menu.inner.selectpicker {
+  li a {
+    font-size: 20px;
+    padding: 15px 30px;
+  }
+}
+
+/*заготовки под разные экраны*/
+@media (max-width: 767px) { /*Extra small devices Phones (<768px)*/
+  .btn.selectpicker.btn-default {
+
+  }
+}
+
+@media (min-width: 768px) { /*Small devices Tablets (≥768px)*/
+  .btn.selectpicker.btn-default {
+
+  }
+}
+
+@media (min-width: 992px) { /*Medium devices Desktops (≥992px)*/
+  .btn.selectpicker.btn-default {
+
+  }
+}
+
+@media (min-width: 1200px) { /*Large devices Desktops (≥1200px)*/
+
+}

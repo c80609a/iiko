@@ -17,9 +17,9 @@ is_production = false
 branch_name = Git.open('.').current_branch
 user_name = 'iiko'
 
-db_name = "#{user_name}_develop" # например: forbiz_feature_social_buttons_db
+db_name = "#{user_name}_develop_db" # например: forbiz_feature_social_buttons_db
 if is_production
-  db_name = "#{user_name}_production"
+  db_name = "#{user_name}_production_db"
 end
 
 pass = 'koi8rus'
