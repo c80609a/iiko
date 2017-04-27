@@ -5,8 +5,8 @@ class AktSpisaniaController < ApplicationController
   # helper Forms # fails
   helper Front::AktSpisania::Forms # works!
 
-  # шеф-повар, базовая форма
-  def idle_chief
+  # шеф-повару предлагается меню с действиями относительно актов списания
+  def idle
 
   end
 
