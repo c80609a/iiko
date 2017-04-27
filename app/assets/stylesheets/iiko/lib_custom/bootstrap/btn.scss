@@ -24,3 +24,9 @@
     line-height: 63px;
   }
 }
+
+@media (max-width: 376px) { /* IPhone 7 (<=375px)*/
+  .btn {
+    font-size: 21px;
+  }
+}

@@ -89,6 +89,23 @@ div.form_03_view {
   }
 }
 
+@media (max-width: 376px) { /* IPhone 7 (<=375px)*/
+  div.form_03_view {
+
+    /*делаем заголовки меньше (по сравнению с landscape)*/
+    h4 {
+      font-size: 17px;
+    }
+
+    /*текст в таблице делаем меньше (по сравнению с landscape)*/
+    .table {
+      font-size: 15px;
+    }
+
+  }
+}
+
+
 @media (min-width: 768px) { /*Small devices Tablets (≥768px)*/
   div.form_03_view {
 
