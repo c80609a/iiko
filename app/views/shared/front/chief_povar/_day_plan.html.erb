@@ -1,0 +1,47 @@
+<div class="forms_container">
+  <div class="top">
+    <div class="chief_povar_day_plan">
+
+      <div id="head">
+        <div class="float-left">
+          <h4 class="name">План на день</h4>
+          <h4 class="place">Холодный цех</h4>
+        </div>
+
+        <div class="float-right">
+          <h4 class="datetime text-right">23 февраля 2017 г</h4>
+        </div>
+      </div>
+
+      <div>
+        <table class="table table-striped">
+          <thead>
+            <tr>
+              <th>Название</th>
+              <th>Кол-во</th>
+              <th>Статус</th>
+              <th>Ответственный</th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody>
+            <% day_plan_items.each do |el| %>
+                <tr>
+                  <td><%= el[:title] %></td>
+                  <td><%= el[:count] %></td>
+                  <td><%= el[:status] %></td>
+                  <td><%= el[:assigned_person] %></td>
+                  <td class="text-right">
+                    <% el[:actions].each do |act| %>
+                      <%= link_to act[0], '#', :class => "btn btn-#{act[2]}" %>
+                    <% end %>
+                  </td>
+                </tr>
+            <% end %>
+          </tbody>
+        </table>
+      </div>
+
+    </div>
+  </div>
+</div>

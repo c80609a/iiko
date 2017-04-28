@@ -2,24 +2,27 @@ Rails.application.routes.draw do
   devise_for :users, ActiveAdmin::Devise.config
   ActiveAdmin.routes(self)
 
-  root to: 'akt_spisania#idle_chief'
+  root to: 'qwerty#whoareu'
 
-  # * This will enable Rails to recognize paths such as /akt_spisania/idle_chief
-  # with GET, and route to the `idle_chief` action of AktSpisaniaController.
+  # * This will enable Rails to recognize paths such as /akt_spisania/idle
+  # with GET, and route to the `idle` action of AktSpisaniaController.
   # * It will also create the `idle_chief_akt_spisania_url`
-  # and `idle_chief_akt_spisania_path` route helpers.
+  # and `idle_akt_spisania_path` route helpers.
   resources :akt_spisania do
     collection do
-      get 'idle_chief'
+      get 'idle'
       get 'make_chief'
       get 'view_chief'
       get 'delete_chief'
     end
   end
 
-  # namespace :akt_spisania do
-  #   get '/idle_chief', to: 'akt_spisania#idle_chief'
-  # end
+  resources :chief_povar do
+    collection do
+      get 'idle'
+      get 'day_plan'
+    end
+  end
 
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end

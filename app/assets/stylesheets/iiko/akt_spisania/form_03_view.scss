@@ -6,48 +6,12 @@ div.form_03_view {
     @include clearfix;
   }
 
-  .name {
-    font-weight: bold;
-  }
-
-  .place {
-    font-style: italic;
-    font-family: serif;
-  }
-
-  .datetime {
-    color: #730E15;
-  }
-
   /*правую шапки выравниваем по правому краю*/
   .act_id {
     text-align: right;
   }
   .badge {
     float: right;
-  }
-
-  .table {
-    font-size: 25px;
-    margin-top: 30px;
-    margin-bottom: 30px;
-
-    thead th {
-      color: #414547;
-      background-color: #cdcecf;
-    }
-
-    .col-actions {
-      width: 250px;
-    }
-
-    td, th {
-      vertical-align: middle;
-    }
-
-    td {
-      padding: 20px 10px;
-    }
   }
 
 }
