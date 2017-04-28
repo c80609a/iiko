@@ -32,7 +32,7 @@
                   <td><%= el[:status] %></td>
                   <td><%= el[:assigned_person] %></td>
                   <td class="text-right">
-                    <% el[:actions].each do |act| %>
+                    <% eval(el[:actions]).each do |act| %>
                       <%= link_to act[0], '#', :class => "btn btn-#{act[2]}" %>
                     <% end %>
                   </td>

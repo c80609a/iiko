@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170210115029) do
+ActiveRecord::Schema.define(version: 20170428060800) do
 
   create_table "active_admin_comments", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci" do |t|
     t.string   "namespace"
@@ -24,6 +24,21 @@ ActiveRecord::Schema.define(version: 20170210115029) do
     t.index ["author_type", "author_id"], name: "index_active_admin_comments_on_author_type_and_author_id", using: :btree
     t.index ["namespace"], name: "index_active_admin_comments_on_namespace", using: :btree
     t.index ["resource_type", "resource_id"], name: "index_active_admin_comments_on_resource_type_and_resource_id", using: :btree
+  end
+
+  create_table "proto_day_plans", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci" do |t|
+    t.string   "title"
+    t.string   "kind"
+    t.string   "count"
+    t.string   "assigned_person"
+    t.boolean  "is_my"
+    t.string   "status"
+    t.boolean  "possible"
+    t.boolean  "my_assignment"
+    t.integer  "related"
+    t.text     "actions",         limit: 65535
+    t.datetime "created_at",                    null: false
+    t.datetime "updated_at",                    null: false
   end
 
   create_table "users", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci" do |t|
