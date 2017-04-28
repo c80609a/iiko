@@ -7,13 +7,20 @@ Rails.application.routes.draw do
   # * This will enable Rails to recognize paths such as /akt_spisania/idle
   # with GET, and route to the `idle` action of AktSpisaniaController.
   # * It will also create the `idle_chief_akt_spisania_url`
-  # and `idle_chief_akt_spisania_path` route helpers.
+  # and `idle_akt_spisania_path` route helpers.
   resources :akt_spisania do
     collection do
       get 'idle'
       get 'make_chief'
       get 'view_chief'
       get 'delete_chief'
+    end
+  end
+
+  resources :chief_povar do
+    collection do
+      get 'idle'
+      get 'day_plan'
     end
   end
 
