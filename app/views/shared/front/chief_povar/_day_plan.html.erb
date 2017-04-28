@@ -13,13 +13,15 @@
         </div>
       </div>
 
-      <div class="table-filters">
-        <%= link_to 'Блюда', '#', :class => 'btn btn-default' %>
-        <%=link_to 'Компоненты', '#', :class => 'btn btn-default' %>
+      <div class="table-filters" data-table_id="table_day_plan">
+        <%= link_to 'Блюда', '#', :class => 'btn btn-default', :data => {:value => 'Блюдо' } %>
+        <%= link_to 'Компоненты', '#', :class => 'btn btn-default', :data => {:value => 'Компонент' } %>
+        <%= link_to 'Всё', '#', :class => 'btn btn-default', :data => {:value => 'all' } %>
       </div>
 
       <div>
-        <table class="table table-striped table-with-filters">
+        <table class="table table-striped table-with-filters" data-id="table_day_plan">
+
           <thead>
             <tr>
               <th>Название</th>
@@ -29,14 +31,15 @@
               <th></th>
             </tr>
           </thead>
+
           <tbody>
             <% day_plan_items.each do |el| %>
-                <tr>
+                <tr data-value="<%= el[:kind] %>">
                   <td><%= el[:title] %></td>
                   <td><%= el[:count] %></td>
                   <td><%= el[:status] %></td>
                   <td><%= el[:assigned_person] %></td>
-                  <td class="text-right">
+                  <td class="text-right col-actions">
                     <% eval(el[:actions]).each do |act| %>
                       <%= link_to act[0], '#', :class => "btn btn-#{act[2]}" %>
                     <% end %>
