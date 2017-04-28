@@ -13,8 +13,13 @@
         </div>
       </div>
 
+      <div class="table-filters">
+        <%= link_to 'Блюда', '#', :class => 'btn btn-default' %>
+        <%=link_to 'Компоненты', '#', :class => 'btn btn-default' %>
+      </div>
+
       <div>
-        <table class="table table-striped">
+        <table class="table table-striped table-with-filters">
           <thead>
             <tr>
               <th>Название</th>

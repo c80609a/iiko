@@ -18,6 +18,12 @@ div.forms_container {
       padding: 15px;
       max-width: 1000px;
 
+      /*внутри форм всё укладываем строками*/
+      > div {
+        //noinspection SassScssResolvedByNameOnly
+        @include clearfix;
+      }
+
       h1 {
         margin-bottom: 50px;
         font-weight: bold;

@@ -1,11 +1,5 @@
 div.form_03_view {
 
-  /*всё укладываем строками*/
-  > div {
-    //noinspection SassScssResolvedByNameOnly
-    @include clearfix;
-  }
-
   /*правую шапки выравниваем по правому краю*/
   .act_id {
     text-align: right;
