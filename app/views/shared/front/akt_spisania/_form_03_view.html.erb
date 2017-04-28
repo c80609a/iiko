@@ -22,7 +22,7 @@
               <th>Название</th>
               <th>Кол-во</th>
               <th>Добавлен</th>
-              <th>Действия</th>
+              <th></th>
             </tr>
           </thead>
           <tbody>
@@ -31,7 +31,7 @@
                 <td><%= el[:item][0] %></td>
                 <td><%= el[:count] %></td>
                 <td><%= el[:timestamp] %></td>
-                <td>
+                <td class="text-right">
                   <%= link_to 'Удалить', '#' %> |
                   <%= link_to 'Изменить', '#' %>
                 </td>
@@ -43,7 +43,7 @@
 
       <div>
         <%= link_to 'Добавить', make_chief_akt_spisania_path, :class => 'btn btn-warning float-right' %>
-        <%= link_to 'На главную', idle_chief_akt_spisania_path, :class => 'btn btn-default' %>
+        <%= link_to 'На главную', idle_akt_spisania_path, :class => 'btn btn-default' %>
       </div>
 
     </div>
