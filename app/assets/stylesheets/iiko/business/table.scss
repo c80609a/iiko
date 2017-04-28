@@ -1,0 +1,24 @@
+/* стиль таблицы: "план на день", "акт списания"*/
+
+.table {
+  font-size: 20px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+
+  thead th {
+    color: #414547;
+    background-color: #cdcecf;
+  }
+
+  .col-actions {
+    width: 250px;
+  }
+
+  td, th {
+    vertical-align: middle !important;
+  }
+
+  td {
+    padding: 20px 10px;
+  }
+}
