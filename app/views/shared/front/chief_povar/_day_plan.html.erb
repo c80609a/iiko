@@ -5,7 +5,7 @@
       <div id="head">
         <div class="float-left">
           <h4 class="name">План на день</h4>
-          <h4 class="place">Холодный цех</h4>
+          <h4 class="place">Горячий цех</h4>
         </div>
 
         <div class="float-right">
@@ -14,9 +14,8 @@
       </div>
 
       <div class="table-filters" data-table_id="table_day_plan">
-        <%= link_to 'Блюда', '#', :class => 'btn btn-default', :data => {:value => 'Блюдо' } %>
+        <%= link_to 'Блюда', '#', :class => 'btn btn-default', :data => {:value => 'Блюдо', :default => 'true' } %>
         <%= link_to 'Компоненты', '#', :class => 'btn btn-default', :data => {:value => 'Компонент' } %>
-        <%= link_to 'Всё', '#', :class => 'btn btn-default', :data => {:value => 'all' } %>
       </div>
 
       <div>
@@ -35,7 +34,7 @@
           <tbody>
             <% day_plan_items.each do |el| %>
                 <tr data-value="<%= el[:kind] %>">
-                  <td><%= el[:title] %></td>
+                  <td class="col-title"><%= el[:title] %></td>
                   <td><%= el[:count] %></td>
                   <td><%= el[:status] %></td>
                   <td><%= el[:assigned_person] %></td>
