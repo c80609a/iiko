@@ -5,11 +5,6 @@
   margin-top: 30px;
   margin-bottom: 30px;
 
-  /*но если у таблицы подразумевается фильтр-панель сверху - отступ сделаем меньше*/
-  &.table-with-filters {
-    margin-top: 10px;
-  }
-
   thead th {
     color: #414547;
     background-color: #cdcecf;

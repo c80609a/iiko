@@ -4,9 +4,25 @@
 
   /*кнопка, которая активна (т.е. фильтр по этому значению используется в данный момент)*/
   .active {
-    background-color: #353535;
+    background-color: #333333;
     color: white;
-    border-color: black;
+    border-color: #333333;
+  }
+
+}
+
+.table-with-filters {
+
+  /*но если у таблицы подразумевается фильтр-панель сверху - отступ сделаем меньше*/
+  margin-top: 10px;
+
+  tbody {
+    tr {
+      display: none;
+      &.on {
+        display: table-row;
+      }
+    }
   }
 
 }

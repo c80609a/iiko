@@ -93,12 +93,12 @@ var TableFilters = function (){
     this._apply = function(val, $b) {
         if (val === 'all') {
             // покажем все строки
-            _$table.find('tr').css('display','table-row');
+            _$table.find('tr').addClass('on');
         } else {
             // сначала просто скрываем все строки
-            _$table.find('tr').css('display','none');
+            _$table.find('tr').removeClass('on');
             // а потом включаем видимость нужных строк
-            _$table.find('tr[data-value='+val+']').css('display','table-row');
+            _$table.find('tr[data-value='+val+']').addClass('on');
         }
 
         // запоминаем установку
