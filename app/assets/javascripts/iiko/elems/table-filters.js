@@ -50,7 +50,7 @@ var TableFilters = function (){
      * @param params
      */
     this.init = function ($el, params){
-        console.log('[TableFilters.init]');
+        // console.log('[TableFilters.init]');
 
         // extend options
         if (params !== undefined){
@@ -63,10 +63,21 @@ var TableFilters = function (){
         _$table = $('table[data-id=' + table_id + ']').find('tbody');
         _$buttons = _$filters_div.find('a');
 
-        // начинаем слушать клик по кнопкам
-        _$buttons.on('click', _this._on_filter_click);
+        if (_$buttons.length !== 0) {
+            // начинаем слушать клик по кнопкам
+            _$buttons.on('click', _this._on_filter_click);
 
-        // console.log('[TableFilters.init]: ' + _$filtering_table.length + ', ' + _$filters.length);
+            // находим дефолтную кнопку и кликаем по ней
+            var $default_button = _$buttons.filter('[data-default=true]');
+            // если таковой нету - берём первую попавшуюся
+            if ($default_button.length === 0) {
+                $default_button = _$buttons.first();
+            }
+            // кликаем по ней
+            $default_button.click();
+        }
+
+        console.log('[TableFilters.init]: ' + _$table.length + ', ' + _$buttons.length);
 
     };
 
