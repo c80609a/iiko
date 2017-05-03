@@ -1,6 +1,7 @@
 #= require jquery
 #= require jquery_ujs
 
+#= require bootstrap/transition
 #= require bootstrap-select
 #= require bootstrap/alert
 #= require bootstrap/dropdown
