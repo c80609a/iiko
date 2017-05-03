@@ -8,7 +8,7 @@ arr = [
         count:           '10 шт',
         assigned_person: nil,
         is_my:           false,
-        status:          'new',
+        status:          '<span class="label label-danger">new</span>',
         possible:        false,
         my_assignment:   false,
         previous:        nil,
@@ -24,7 +24,7 @@ arr = [
         count:           '10 шт',
         assigned_person: nil,
         is_my:           false,
-        status:          'new',
+        status:          '<span class="label label-danger">new</span>',
         possible:        true,
         my_assignment:   false,
         previous:        nil,
@@ -40,7 +40,7 @@ arr = [
         count:           '10 шт',
         assigned_person: 'Петров',
         is_my:           false,
-        status:          'new',
+        status:          '<span class="label label-danger">new</span>',
         possible:        false,
         my_assignment:   true,
         previous:        nil,
@@ -56,7 +56,7 @@ arr = [
         count:           '0,29 кг',
         assigned_person: nil,
         is_my:           false,
-        status:          'new',
+        status:          '<span class="label label-danger">new</span>',
         possible:        true,
         my_assignment:   nil,
         related:         '1,2,3',
@@ -64,7 +64,7 @@ arr = [
         next:            '[11, 18, 20]', # порезать кубиками, отварить, нарезать дольками
         actions:         [
                              ['Назначить', 1, 'success btn-show-modal-assign'],
-                             ['Готовить', 2, 'warning']
+                             ['Готовить', 2, 'warning btn-start-cooking']
                          ]
     },
     {
@@ -74,7 +74,7 @@ arr = [
         count:           '0,2 кг',
         assigned_person: nil,
         is_my:           false,
-        status:          'new',
+        status:          '<span class="label label-danger">new</span>',
         possible:        true,
         my_assignment:   nil,
         related:         '1,3',
@@ -82,7 +82,7 @@ arr = [
         next:            [12, 21], # натереть, нарезать ломтиками
         actions:         [
                              ['Назначить', 1, 'success btn-show-modal-assign'],
-                             ['Готовить', 2, 'warning']
+                             ['Готовить', 2, 'warning btn-start-cooking']
                          ]
     },
     {
@@ -92,7 +92,7 @@ arr = [
         count:           '0,3 кг',
         assigned_person: nil,
         is_my:           false,
-        status:          'new',
+        status:          '<span class="label label-danger">new</span>',
         possible:        true,
         my_assignment:   nil,
         related:         '1,3',
@@ -100,7 +100,7 @@ arr = [
         next:            [133], # нашинковать лук
         actions:         [
                              ['Назначить', 1, 'success btn-show-modal-assign'],
-                             ['Готовить', 2, 'warning']
+                             ['Готовить', 2, 'warning btn-start-cooking']
                          ]
     },
     {
@@ -110,7 +110,7 @@ arr = [
         count:           '0,4 кг',
         assigned_person: nil,
         is_my:           false,
-        status:          'new',
+        status:          '<span class="label label-danger">new</span>',
         possible:        true,
         my_assignment:   nil,
         related:         '1',
@@ -118,7 +118,7 @@ arr = [
         next:            [1], # следующее действие - собственно, уже готовка блюда "Щи"
         actions:         [
                              ['Назначить', 1, 'success btn-show-modal-assign'],
-                             ['Готовить', 2, 'warning']
+                             ['Готовить', 2, 'warning btn-start-cooking']
                          ]
     },
     {
@@ -128,7 +128,7 @@ arr = [
         count:           '0,4 кг',
         assigned_person: nil,
         is_my:           false,
-        status:          'new',
+        status:          '<span class="label label-danger">new</span>',
         possible:        true,
         my_assignment:   nil,
         related:         '1',
@@ -136,7 +136,7 @@ arr = [
         next:            [1], # следующее действие - собственно, уже готовка блюда "Щи"
         actions:         [
                              ['Назначить', 1, 'success btn-show-modal-assign'],
-                             ['Готовить', 2, 'warning']
+                             ['Готовить', 2, 'warning btn-start-cooking']
                          ]
     },
     {
@@ -146,7 +146,7 @@ arr = [
         count:           '5 шт',
         assigned_person: nil,
         is_my:           false,
-        status:          'new',
+        status:          '<span class="label label-danger">new</span>',
         possible:        true,
         my_assignment:   nil,
         related:         '1',
@@ -154,7 +154,7 @@ arr = [
         next:            [15], # почистить и разрезать на 2 части
         actions:         [
                              ['Назначить', 1, 'success btn-show-modal-assign'],
-                             ['Готовить', 2, 'warning']
+                             ['Готовить', 2, 'warning btn-start-cooking']
                          ]
     },
     {
@@ -164,7 +164,7 @@ arr = [
         count:           '0,01 кг',
         assigned_person: nil,
         is_my:           false,
-        status:          'new',
+        status:          '<span class="label label-danger">new</span>',
         possible:        true,
         my_assignment:   nil,
         related:         '1,3',
@@ -172,7 +172,7 @@ arr = [
         next:            [16],
         actions:         [
                              ['Назначить', 1, 'success btn-show-modal-assign'],
-                             ['Готовить', 2, 'warning']
+                             ['Готовить', 2, 'warning btn-start-cooking']
                          ]
     },
     {
@@ -182,7 +182,7 @@ arr = [
         count:           '0,29 кг',
         assigned_person: nil,
         is_my:           false,
-        status:          'new',
+        status:          '<span class="label label-danger">new</span>',
         possible:        true,
         my_assignment:   nil,
         related:         '1',
@@ -199,7 +199,7 @@ arr = [
         count:           '0,1 кг',
         assigned_person: nil,
         is_my:           false,
-        status:          'new',
+        status:          '<span class="label label-danger">new</span>',
         possible:        true,
         my_assignment:   nil,
         related:         '1',
@@ -216,7 +216,7 @@ arr = [
         count:           '0,3 кг',
         assigned_person: nil,
         is_my:           false,
-        status:          'new',
+        status:          '<span class="label label-danger">new</span>',
         possible:        true,
         my_assignment:   nil,
         related:         '1,3',
@@ -233,7 +233,7 @@ arr = [
         count:           '0,4 кг',
         assigned_person: nil,
         is_my:           false,
-        status:          'new',
+        status:          '<span class="label label-danger">new</span>',
         possible:        true,
         my_assignment:   nil,
         related:         '1',
@@ -250,7 +250,7 @@ arr = [
         count:           '0,4 кг',
         assigned_person: nil,
         is_my:           false,
-        status:          'new',
+        status:          '<span class="label label-danger">new</span>',
         possible:        true,
         my_assignment:   nil,
         related:         '1',
@@ -267,7 +267,7 @@ arr = [
         count:           '5 шт',
         assigned_person: nil,
         is_my:           false,
-        status:          'new',
+        status:          '<span class="label label-danger">new</span>',
         possible:        true,
         my_assignment:   nil,
         related:         '1',
@@ -284,7 +284,7 @@ arr = [
         count:           '0,02 кг',
         assigned_person: nil,
         is_my:           false,
-        status:          'new',
+        status:          '<span class="label label-danger">new</span>',
         possible:        true,
         my_assignment:   nil,
         related:         '1,3',
@@ -301,7 +301,7 @@ arr = [
         count:           '0,25 кг',
         assigned_person: nil,
         is_my:           false,
-        status:          'new',
+        status:          '<span class="label label-danger">new</span>',
         possible:        true,
         my_assignment:   nil,
         related:         '1',
@@ -318,7 +318,7 @@ arr = [
         count:           '1,42 кг',
         assigned_person: nil,
         is_my:           false,
-        status:          'new',
+        status:          '<span class="label label-danger">new</span>',
         possible:        true,
         my_assignment:   nil,
         related:         '2',
@@ -335,7 +335,7 @@ arr = [
         count:           '1,42 кг',
         assigned_person: nil,
         is_my:           false,
-        status:          'new',
+        status:          '<span class="label label-danger">new</span>',
         possible:        true,
         my_assignment:   nil,
         related:         '2',
@@ -352,7 +352,7 @@ arr = [
         count:           '0,45 кг',
         assigned_person: nil,
         is_my:           false,
-        status:          'new',
+        status:          '<span class="label label-danger">new</span>',
         possible:        true,
         my_assignment:   nil,
         related:         '3',
@@ -369,7 +369,7 @@ arr = [
         count:           '0,1 кг',
         assigned_person: nil,
         is_my:           false,
-        status:          'new',
+        status:          '<span class="label label-danger">new</span>',
         possible:        true,
         my_assignment:   nil,
         related:         '3',

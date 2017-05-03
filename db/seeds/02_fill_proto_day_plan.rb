@@ -25,7 +25,7 @@ arr = [
      my_assignment:   false,
      actions:         [
                           ['Назначить', 1, 'success btn-show-modal-assign'],
-                          ['Готовить', 2, 'warning']
+                          ['Готовить', 2, 'warning btn-start-cooking']
                       ]
     },
     {# [3]
@@ -77,7 +77,7 @@ arr = [
      possible:        true,
      my_assignment:   true,
      actions:         [
-                          ['Готовить', 2, 'warning'],
+                          ['Готовить', 2, 'warning btn-start-cooking'],
                           ['Переназначить', 3, 'default']
                       ]
     },
@@ -104,7 +104,7 @@ arr = [
      related:         'Борщ',
      actions:         [
                           ['Назначить', 1, 'success btn-show-modal-assign'],
-                          ['Готовить', 2, 'warning']
+                          ['Готовить', 2, 'warning btn-start-cooking']
                       ]
     },
     {# [9]
@@ -132,7 +132,7 @@ arr = [
      my_assignment:   nil,
      related:         'Борщ',
      actions:         [
-                          ['Готовить', 2, 'warning']
+                          ['Готовить', 2, 'warning btn-start-cooking']
                       ]
     },
     {# [7.0]

@@ -23,9 +23,11 @@ $(document).ready(function() {
         // живёт в модальном окне
         var $select = $modal.find('.selectpicker');
 
-        // показать модальное окно
-        var f_show_modal_assign = function() {
+        // показать модальное окно (сработает при клике)
+        var f_show_modal_assign = function(e) {
             // console.log('[f_show_modal_assign]');
+
+            e.preventDefault();
 
             // подставим во второй заголовок окна инфо из строки таблицы
             // в которой расположена кнопка.
