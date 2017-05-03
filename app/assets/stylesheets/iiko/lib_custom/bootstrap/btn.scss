@@ -27,7 +27,18 @@
     padding-top: 3px;
     line-height: 63px;
   }
+
+  .table, .table-filters {
+    .btn {
+      line-height: 43px;
+    }
+  }
+
 }
+
+@media (max-width: 667px) { /* IPhone 7 landscape (<=667px)*/
+}
+
 
 @media (max-width: 415px) { /*Extra small devices Phones (<414px)*/ /* Iphone6 Plus Portrait */
   .btn {
@@ -38,8 +49,15 @@
   }
 }
 
-@media (max-width: 376px) { /* IPhone 7 (<=375px)*/
+@media (max-width: 376px) { /* IPhone 7 portrait (<=375px)*/
   .btn {
     font-size: 21px;
   }
+
+  .table, .table-filters {
+    .btn {
+      line-height: 40px;
+    }
+  }
+
 }

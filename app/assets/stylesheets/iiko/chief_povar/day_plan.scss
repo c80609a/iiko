@@ -19,3 +19,40 @@
 
   }
 }
+
+@media (max-width: 767px) { /*Extra small devices Phones (<768px)*/
+  .chief_povar_day_plan {
+    .table {
+
+      /*столбец с названием делаем менее широким*/
+      .col-title {
+        width: 131px !important;
+        min-width: 131px !important;
+      }
+
+      /*текст в таблице делаем меньше*/
+      font-size: 20px;
+
+    }
+  }
+}
+
+@media (max-width: 667px) { /* IPhone 7 landscape (<=667px)*/
+}
+
+@media (max-width: 376px) { /* IPhone 7 portrait (<=375px)*/
+  .chief_povar_day_plan {
+    .table {
+
+      /*столбец с названием делаем менее широким*/
+      .col-title {
+        width: 131px !important;
+        min-width: 131px !important;
+      }
+
+      /*текст в таблице делаем меньше*/
+      font-size: 15px;
+
+    }
+  }
+}
