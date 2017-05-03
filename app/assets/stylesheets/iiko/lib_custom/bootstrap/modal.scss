@@ -14,4 +14,20 @@
     font-size: 30px;
   }
 
+  h5.modal-title {
+    font-size: 20px;
+    padding-left: 25px;
+    position: relative;
+
+    &:after {
+      position: absolute;
+      display: block;
+      content: "\f097";
+      font-family: FontAwesome;
+      top: 0;
+      left: 0;
+
+    }
+  }
+
 }
