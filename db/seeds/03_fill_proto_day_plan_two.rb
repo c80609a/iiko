@@ -14,7 +14,7 @@ arr = [
         previous:        nil,
         next:            nil,
         actions:         [
-                             ['Назначить', 1, 'success']
+                             ['Назначить', 1, 'success btn-show-modal-assign']
                          ]
     },
     {
@@ -30,7 +30,7 @@ arr = [
         previous:        nil,
         next:            nil,
         actions:         [
-                             ['Назначить', 1, 'success']
+                             ['Назначить', 1, 'success btn-show-modal-assign']
                          ]
     },
     {
@@ -63,7 +63,7 @@ arr = [
         previous:        nil,
         next:            '[11, 18, 20]', # порезать кубиками, отварить, нарезать дольками
         actions:         [
-                             ['Назначить', 1, 'success'],
+                             ['Назначить', 1, 'success btn-show-modal-assign'],
                              ['Готовить', 2, 'warning']
                          ]
     },
@@ -81,7 +81,7 @@ arr = [
         previous:        nil,
         next:            [12, 21], # натереть, нарезать ломтиками
         actions:         [
-                             ['Назначить', 1, 'success'],
+                             ['Назначить', 1, 'success btn-show-modal-assign'],
                              ['Готовить', 2, 'warning']
                          ]
     },
@@ -99,7 +99,7 @@ arr = [
         previous:        nil,
         next:            [133], # нашинковать лук
         actions:         [
-                             ['Назначить', 1, 'success'],
+                             ['Назначить', 1, 'success btn-show-modal-assign'],
                              ['Готовить', 2, 'warning']
                          ]
     },
@@ -117,7 +117,7 @@ arr = [
         previous:        nil,
         next:            [1], # следующее действие - собственно, уже готовка блюда "Щи"
         actions:         [
-                             ['Назначить', 1, 'success'],
+                             ['Назначить', 1, 'success btn-show-modal-assign'],
                              ['Готовить', 2, 'warning']
                          ]
     },
@@ -135,7 +135,7 @@ arr = [
         previous:        nil,
         next:            [1], # следующее действие - собственно, уже готовка блюда "Щи"
         actions:         [
-                             ['Назначить', 1, 'success'],
+                             ['Назначить', 1, 'success btn-show-modal-assign'],
                              ['Готовить', 2, 'warning']
                          ]
     },
@@ -153,7 +153,7 @@ arr = [
         previous:        nil,
         next:            [15], # почистить и разрезать на 2 части
         actions:         [
-                             ['Назначить', 1, 'success'],
+                             ['Назначить', 1, 'success btn-show-modal-assign'],
                              ['Готовить', 2, 'warning']
                          ]
     },
@@ -171,7 +171,7 @@ arr = [
         previous:        nil,
         next:            [16],
         actions:         [
-                             ['Назначить', 1, 'success'],
+                             ['Назначить', 1, 'success btn-show-modal-assign'],
                              ['Готовить', 2, 'warning']
                          ]
     },
@@ -189,7 +189,7 @@ arr = [
         previous:        [4], # двухсвязный список: предыдущее действие - "почистить картофель"
         next:            [1], # следующее действие - собственно, уже готовка блюда "Щи"
         actions:         [
-                             ['Назначить', 1, 'success']
+                             ['Назначить', 1, 'success btn-show-modal-assign']
                          ]
     },
     {
@@ -206,7 +206,7 @@ arr = [
         previous:        [5], # двухсвязный список: предыдущее действие - "почистить морковь"
         next:            [17], # спассеровать с луком
         actions:         [
-                             ['Назначить', 1, 'success']
+                             ['Назначить', 1, 'success btn-show-modal-assign']
                          ]
     },
     {
@@ -223,7 +223,7 @@ arr = [
         previous:        [6], # двухсвязный список: предыдущее действие - "почистить лук"
         next:            [17,3], # спассеровать с морковью, начать готовить консоме
         actions:         [
-                             ['Назначить', 1, 'success']
+                             ['Назначить', 1, 'success btn-show-modal-assign']
                          ]
     },
     {
@@ -240,7 +240,7 @@ arr = [
         previous:        [7], # предыдущее действие - "помыть щавель"
         next:            [1], # начать готовить щи
         actions:         [
-                             ['Назначить', 1, 'success']
+                             ['Назначить', 1, 'success btn-show-modal-assign']
                          ]
     },
     {
@@ -257,7 +257,7 @@ arr = [
         previous:        [8], # предыдущее действие - "помыть шпинат"
         next:            [1], # начать готовить щи
         actions:         [
-                             ['Назначить', 1, 'success']
+                             ['Назначить', 1, 'success btn-show-modal-assign']
                          ]
     },
     {
@@ -274,7 +274,7 @@ arr = [
         previous:        [9], # предыдущее действие - "сварить яйцо"
         next:            [1], # начать готовить щи
         actions:         [
-                             ['Назначить', 1, 'success']
+                             ['Назначить', 1, 'success btn-show-modal-assign']
                          ]
     },
     {
@@ -291,7 +291,7 @@ arr = [
         previous:        [10], # предыдущее действие - "помыть зелень"
         next:            [1,3], # начать готовить щи, начать готовить консоме
         actions:         [
-                             ['Назначить', 1, 'success']
+                             ['Назначить', 1, 'success btn-show-modal-assign']
                          ]
     },
     {
@@ -308,7 +308,7 @@ arr = [
         previous:        [12,133], # предыдущее действия - "натереть морковь" и "нашинковать лук"
         next:            [1], # начать готовить щи
         actions:         [
-                             ['Назначить', 1, 'success']
+                             ['Назначить', 1, 'success btn-show-modal-assign']
                          ]
     },
     {
@@ -325,7 +325,7 @@ arr = [
         previous:        [4], # предыдущее действие - "картофель почистить"
         next:            [19], # кортофель потереть
         actions:         [
-                             ['Назначить', 1, 'success']
+                             ['Назначить', 1, 'success btn-show-modal-assign']
                          ]
     },
     {
@@ -342,7 +342,7 @@ arr = [
         previous:        [18], # предыдущее действие - "картофель отварить"
         next:            [2], # начать готовить блюдо
         actions:         [
-                             ['Назначить', 1, 'success']
+                             ['Назначить', 1, 'success btn-show-modal-assign']
                          ]
     },
     {
@@ -359,7 +359,7 @@ arr = [
         previous:        [4], # предыдущее действие - "картофель почистить"
         next:            [3], # начать готовить блюдо
         actions:         [
-                             ['Назначить', 1, 'success']
+                             ['Назначить', 1, 'success btn-show-modal-assign']
                          ]
     },
     {
@@ -376,7 +376,7 @@ arr = [
         previous:        [5], # предыдущее действие - "морковь почистить"
         next:            [3], # начать готовить блюдо
         actions:         [
-                             ['Назначить', 1, 'success']
+                             ['Назначить', 1, 'success btn-show-modal-assign']
                          ]
     }
 

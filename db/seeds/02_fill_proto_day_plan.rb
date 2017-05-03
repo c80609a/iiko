@@ -11,7 +11,7 @@ arr = [
      possible:        false,
      my_assignment:   false,
      actions:         [
-                          ['Назначить', 1, 'success']
+                          ['Назначить', 1, 'success btn-show-modal-assign']
                       ]
     },
     {# [2]
@@ -24,7 +24,7 @@ arr = [
      possible:        true,
      my_assignment:   false,
      actions:         [
-                          ['Назначить', 1, 'success'],
+                          ['Назначить', 1, 'success btn-show-modal-assign'],
                           ['Готовить', 2, 'warning']
                       ]
     },
@@ -103,7 +103,7 @@ arr = [
      my_assignment:   nil,
      related:         'Борщ',
      actions:         [
-                          ['Назначить', 1, 'success'],
+                          ['Назначить', 1, 'success btn-show-modal-assign'],
                           ['Готовить', 2, 'warning']
                       ]
     },
@@ -146,7 +146,7 @@ arr = [
      my_assignment:   nil,
      related:         'Борщ',
      actions:         [
-                          ['Назначить', 1, 'success'],
+                          ['Назначить', 1, 'success btn-show-modal-assign'],
                           ['Что с ней?', 22, 'link'] # узнать, какое действие предшествует, кто ещё не почистил и не помыл морковь
                       ]
     },

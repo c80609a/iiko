@@ -1,0 +1,11 @@
+.modal {
+  overflow-y: auto;
+}
+
+/*т.к. modal живёт в несколько необычной среде, где есть хакнутый div.form_container,
+когда он открывается, тоже хакаем bootstrap-класс, чтобы ничего не прыгало*/
+body.modal-open {
+  div.forms_container {
+    padding-right: 17px;
+  }
+}

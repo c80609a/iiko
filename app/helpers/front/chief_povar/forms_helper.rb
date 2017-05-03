@@ -29,6 +29,20 @@ module Front
                }
       end
 
+      # модальное окно "назначить сотрудника на приготовление блюда"
+      def render_modal_assign
+        p = [
+            ['Фёдоров', 5],
+            ['Иванов', 4],
+            ['Петров', 3],
+            ['Николаев (это Вы)', 2]
+        ]
+        render :partial => 'shared/front/chief_povar/modal_assign',
+               :locals => {
+                   persons_array: p
+               }
+      end
+
     end
   end
 end
