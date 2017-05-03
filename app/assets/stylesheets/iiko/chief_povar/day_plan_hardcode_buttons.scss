@@ -1,5 +1,13 @@
 @media (max-width: 767px) { /*Extra small devices Phones (<768px)*/ /* Iphone6 Plus Landscape */
-
+  .chief_povar_day_plan {
+    .table {
+      .btn {
+        /*хардкодим для текущих надписей в кнопках "готовить" и "назначить" - делаем их одинаковой ширины*/
+        width: 136px;
+        margin-top: 5px;
+      }
+    }
+  }
 }
 
 @media (max-width: 667px) { /* IPhone 7 landscape (<=667px)*/

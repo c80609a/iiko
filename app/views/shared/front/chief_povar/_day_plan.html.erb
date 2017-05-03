@@ -35,9 +35,9 @@
             <% day_plan_items.each do |el| %>
                 <tr data-value="<%= el[:kind] %>">
                   <td class="col-title"><%= el[:title] %></td>
-                  <td><%= el[:count] %></td>
+                  <td class="col-count"><%= el[:count] %></td>
                   <td><%= el[:status] %></td>
-                  <td><%= el[:assigned_person] %></td>
+                  <td class="col-assigned_person"><%= el[:assigned_person] %></td>
                   <td class="text-right col-actions">
                     <% eval(el[:actions]).each do |act| %>
                       <%= link_to act[0], '#', :class => "btn btn-#{act[2]}" %>
@@ -51,4 +51,5 @@
 
     </div>
   </div>
+  <%= render_modal_assign %>
 </div>

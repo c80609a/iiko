@@ -1,0 +1,19 @@
+<!-- # модальное окно "назначить сотрудника на приготовление блюда" -->
+<!-- chief_povar/forms_helper: render_modal_assign -->
+<div class="modal fade" id="modal_assign" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title" id="myModalLabel">Назначить сотрудника</h4>
+        <h5 class="modal-title">$replace_me$</h5>
+      </div>
+      <div class="modal-body">
+        <%= select_tag :assigned_person, options_for_select(persons_array), :class => 'selectpicker' %>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary float-left" data-dismiss="modal">Назначить</button>
+        <button type="button" class="btn btn-default" data-dismiss="modal">Закрыть</button>
+      </div>
+    </div>
+  </div>
+</div>

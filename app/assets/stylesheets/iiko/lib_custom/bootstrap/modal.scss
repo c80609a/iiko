@@ -1,0 +1,33 @@
+/*на небольших экранах запрещаем вылезать за края*/
+.modal-open .modal {
+  max-width: 97%;
+}
+
+/*заголовок окна*/
+.modal-header {
+
+  /*делаем отступы больше, чем обычно*/
+  padding: 27px;
+
+  /*шрифт делаем больше*/
+  h4.modal-title {
+    font-size: 30px;
+  }
+
+  h5.modal-title {
+    font-size: 20px;
+    padding-left: 25px;
+    position: relative;
+
+    &:after {
+      position: absolute;
+      display: block;
+      content: "\f097";
+      font-family: FontAwesome;
+      top: 0;
+      left: 0;
+
+    }
+  }
+
+}
