@@ -1,0 +1,25 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  title: MyString
+  type: 
+  count: MyString
+  assigned_person: MyString
+  is_my: false
+  status: MyString
+  possible: false
+  my_assignment: false
+  related: 1
+  actions: MyText
+
+two:
+  title: MyString
+  type: 
+  count: MyString
+  assigned_person: MyString
+  is_my: false
+  status: MyString
+  possible: false
+  my_assignment: false
+  related: 1
+  actions: MyText
