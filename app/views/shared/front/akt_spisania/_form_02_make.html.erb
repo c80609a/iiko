@@ -1,7 +1,7 @@
 <div class="forms_container">
   <div class="middle">
+    <div><%= render_bcrumbs %></div>
     <div class="form_02_make">
-      <h1>Списать</h1>
       <%= form_tag do %>
           <div class="form-group">
             <%= select_tag :item, options_for_select(items_array), :class => 'selectpicker' %>

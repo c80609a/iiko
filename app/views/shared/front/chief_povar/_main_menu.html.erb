@@ -1,5 +1,8 @@
 <div class="forms_container">
   <div class="middle">
+    <div>
+      <%= render_bcrumbs %>
+    </div>
     <div class="chief_povar_main_menu">
       <% menu_items.each do |el| %>
           <%= link_to el[0], el[1], :class => 'btn btn-primary btn-block btn-lg' %>

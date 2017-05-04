@@ -33,6 +33,7 @@ gem 'mini_magick'
 gem 'carrierwave'
 gem 'git'
 gem 'gon'
+gem 'breadcrumbs_on_rails'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.0.1'
