@@ -5,6 +5,8 @@ class AktSpisaniaController < ApplicationController
   # helper Forms # fails
   helper Front::AktSpisania::Forms # works!
 
+  before_action :construct
+
   # шеф-повару предлагается меню с действиями относительно актов списания
   def idle
     # noinspection RubyResolve
