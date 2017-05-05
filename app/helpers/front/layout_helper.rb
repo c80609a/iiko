@@ -9,5 +9,9 @@ module Front
       render :partial => 'shared/front/layout/form_footer'
     end
 
+    def render_modal_info
+      render :partial => 'shared/front/layout/modal_info'
+    end
+
   end
 end

@@ -2,6 +2,8 @@ class ChiefPovarController < ApplicationController
 
   helper Front::ChiefPovar::FormsHelper
 
+  before_action :construct
+
   # Шеф-повар попадает на эrкран с меню с кнопками "Готовить", "Списывать"
   def idle
     # noinspection RubyResolve
