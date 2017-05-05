@@ -1,7 +1,7 @@
 <div class="forms_container">
   <div class="middle">
+    <div class="breadcrumbs_container"><%= render_bcrumbs %></div>
     <div class="form_02_make">
-      <h1>Списать</h1>
       <%= form_tag do %>
           <div class="form-group">
             <%= select_tag :item, options_for_select(items_array), :class => 'selectpicker' %>
@@ -12,10 +12,11 @@
           <div class="form-group">
             <%= text_field_tag :comment, '', :class => 'form-control', :placeholder => 'Укажите причину списания' %>
           </div>
-          <%= link_to 'Отмена', idle_akt_spisania_path, :class => 'btn btn-default' %>
+          <%# link_to 'Отмена', idle_akt_spisania_path, :class => 'btn btn-default' %>
           <%# submit_tag 'Списать', :class => 'btn btn-warning float-right' %>
           <%= link_to 'Списать', view_chief_akt_spisania_path, :class => 'btn btn-warning float-right' %>
       <% end %>
     </div>
+    <%= render_form_footer %>
   </div>
 </div>

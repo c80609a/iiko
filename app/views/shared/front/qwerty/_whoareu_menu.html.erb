@@ -1,9 +1,11 @@
-<div class="forms_container">
+<%# helpers/front/qwerty/forms_helper.rb: render_whoareu_menu %>
+<div class="forms_container" id="forms_container_whoareu">
   <div class="middle">
     <div class="whoareu_menu">
       <% menu_items.each do |el| %>
           <%= link_to el[0], el[1], :class => 'btn btn-primary btn-block btn-lg' %>
       <% end %>
     </div>
+  <%= render_form_footer %>
   </div>
 </div>

@@ -1,0 +1,107 @@
+div.breadcrumbs_container {
+  border-bottom: 1px dotted #d8d0d0;
+  margin-bottom: 5px;
+  padding-bottom: 5px;
+}
+
+$height: 60px; /* total height */
+
+.steps {
+  /*margin: 40px;*/
+  padding: 0;
+  overflow: hidden;
+}
+
+.steps a {
+  display: block;
+  font-size: 1.2em;
+  height: $height - 10;
+  vertical-align: middle;
+  line-height: $height - 10;
+  text-align: center;
+  color: #817f7f;
+  &:hover {
+    text-decoration: none !important;
+    color: #777575;
+  }
+}
+
+.steps li {
+  float: left;
+  margin-left: 0;
+  width: 150px; /* 100 / number of steps */
+  height: $height;
+  list-style-type: none;
+  padding: 5px 5px 5px 30px; /* padding around text, last should include arrow width */
+  border-right: 3px solid white; /* width: gap between arrows, color: background of document */
+  position: relative;
+}
+
+/* remove extra padding on the first object since it doesn't have an arrow to the left */
+.steps li:first-child {
+  padding-left: 5px;
+}
+
+/* white arrow to the left to "erase" background (starting from the 2nd object) */
+.steps li:nth-child(n+2)::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  border-left: 25px solid white; /* width: arrow width, color: background of document */
+  border-top: $height/2 solid transparent; /* width: half height */
+  border-bottom: $height/2 solid transparent; /* width: half height */
+  width: 0;
+  height: 0;
+  content: " ";
+}
+
+/* colored arrow to the right */
+.steps li::after {
+  z-index: 1; /* need to bring this above the next item */
+  position: absolute;
+  top: 0;
+  right: -25px; /* arrow width (negated) */
+  display: block;
+  border-left: 25px solid #7c8437; /* width: arrow width */
+  border-top: $height/2 solid transparent; /* width: half height */
+  border-bottom: $height/2 solid transparent; /* width: half height */
+  width: 0;
+  height: 0;
+  content: " ";
+}
+
+/* Setup colors (both the background and the arrow) */
+
+.steps li {
+  background-color: #E9E9E9;
+  &:after {
+    border-left-color: #E9E9E9;
+  }
+  &:hover {
+    background-color: #ABE0F0;
+    &:after {
+      border-left-color: #ABE0F0;
+    }
+  }
+}
+
+/* current */
+.steps li:last-child {
+  font-size: 1.2em;
+  height: $height;
+  vertical-align: middle;
+  line-height: $height - 10;
+  text-align: center;
+  color: #817f7f;
+  background-color: #f9f9f9;
+  &:after {
+    border-left-color: #f9f9f9;
+  }
+  &:hover {
+    background-color: #f9f9f9;
+    &:after {
+      border-left-color: #f9f9f9;
+    }
+  }
+}

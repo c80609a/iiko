@@ -2,6 +2,7 @@
 <html>
   <head>
     <title>Iiko</title>
+    <%= include_gon %>
     <%= csrf_meta_tags %>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -11,5 +12,6 @@
 
   <body>
     <%= yield %>
+    <%= render_modal_info %>
   </body>
 </html>

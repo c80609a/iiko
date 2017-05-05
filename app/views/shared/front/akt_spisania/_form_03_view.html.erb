@@ -1,7 +1,7 @@
 <div class="forms_container">
   <div class="top">
     <div class="form_03_view">
-
+      <div class="breadcrumbs_container"><%= render_bcrumbs %></div>
       <div id="head">
         <div class="float-left">
           <h4 class="name">Николаев И.</h4>
@@ -43,9 +43,11 @@
 
       <div>
         <%= link_to 'Добавить', make_chief_akt_spisania_path, :class => 'btn btn-warning float-right' %>
-        <%= link_to 'На главную', idle_akt_spisania_path, :class => 'btn btn-default' %>
+        <%# link_to 'На главную', idle_akt_spisania_path, :class => 'btn btn-default' %>
       </div>
 
     </div>
+    <%= render_form_footer %>
+
   </div>
 </div>
